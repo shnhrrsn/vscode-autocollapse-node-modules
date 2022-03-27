@@ -1,7 +1,7 @@
 {
   "name": "autocollapse-node-modules",
   "displayName": "Autocollapse node_modules",
-  "version": "1.0.0-dev",
+  "version": "1.0.0",
   "description": "Automatically collapse the node_modules folder when switching focus to a file outside of it.",
   "categories": [
     "Other"
