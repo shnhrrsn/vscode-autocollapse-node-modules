@@ -1,0 +1,7 @@
+.husky
+.vscode
+*
+!src
+!package.json
+!LICENSE
+!README.markdown

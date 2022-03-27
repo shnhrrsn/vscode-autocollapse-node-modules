@@ -1,0 +1,56 @@
+{
+  "name": "autocollapse-node-modules",
+  "displayName": "Autocollapse node_modules",
+  "version": "1.0.0-dev",
+  "description": "Automatically collapse the node_modules folder when switching focus to a file outside of it.",
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "javascript",
+    "typescript",
+    "node_modules",
+    "explorer"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shnhrrsn/vscode-autocollapse-node-modules.git"
+  },
+  "license": "MIT",
+  "publisher": "shnhrrsn",
+  "main": "./src/extension.js",
+  "scripts": {
+    "commit": "git-cz",
+    "package": "vsce package",
+    "prepare": "husky install",
+    "release": "standard-version",
+    "release:beta": "standard-version --prerelease beta"
+  },
+  "contributes": {},
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:javascriptreact",
+    "onLanguage:typescript",
+    "onLanguage:typescriptreact"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "@types/node": "14.x",
+    "@types/vscode": "^1.65.0",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "prettier": "^2.6.1",
+    "prettier-plugin-packagejson": "^2.2.17",
+    "standard-version": "^9.3.2",
+    "vsce": "^2.7.0"
+  },
+  "engines": {
+    "vscode": "^1.65.0"
+  },
+  "extensionKind": [
+    "ui"
+  ]
+}
