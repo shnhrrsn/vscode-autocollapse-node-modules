@@ -63,7 +63,7 @@ function isInNodeModules(uri) {
 
 	const relative = uri.fsPath.substring(folder.uri.fsPath.length)
 	console.log('AAAA', relative)
-	return /(^|\/)node_modules(\/|$)/.test(relative)
+	return /(^|[\/\\])node_modules([\/\\]|$)/.test(relative)
 }
 
 function deactivate() {}
